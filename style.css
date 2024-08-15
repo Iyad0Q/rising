@@ -1,0 +1,109 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Noto+Kufi+Arabic:wght@100..900&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Almarai", "Noto Kufi Arabic";
+    font-optical-sizing: auto;
+    font-weight: lighter;
+    font-style: normal;
+}
+header {
+    background-color: #A3DFDD;
+    padding: 10px;
+}
+header h1 {
+    color: #56289a;
+    font-size: 50px;
+
+    /* font-family: "Almarai", sans-serif;
+    font-weight: 800;
+    font-style: bold; */
+    font-family: "Almarai", "Noto Kufi Arabic";
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+}
+header img {
+    border-radius: 50%;
+    float: left;
+    height: 300px;
+    border: black solid 5px;
+    box-shadow: -12px 10px 0px black;
+}
+header nav {
+    background-color: #56289a;
+    padding: 5px 0px;
+}
+header ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+header ul li button {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    cursor: pointer;
+}
+header ul li button:hover {
+    text-decoration: underline;
+}
+main p {
+    margin: 5px 20px;
+    font-size: 18px;
+}
+main h2 {
+    margin: 5px;
+    font-weight: 700;
+}
+main form input {
+    margin-bottom: 10px;
+    padding: 5px;
+}
+main form #submit {
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    cursor: pointer;
+}
+main form #submit, label {
+    font-family: "Almarai", "Noto Kufi Arabic";
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+    header img {
+        height: 200px;
+        display: block;
+        margin: 0px auto;  
+        box-shadow: -20px 0px 0px #000000;
+    }
+    header h1 {
+        display: none;
+    }
+    header nav {
+        background-color: lightblue;
+    }
+    header nav ul {
+        display: inline;
+    }
+    header nav ul li {
+        background-color: #56289a;
+    }
+    header nav ul li button {
+        font-size: 18px;
+        text-align: center;
+    }
+  }
